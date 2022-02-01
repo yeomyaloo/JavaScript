@@ -62,3 +62,12 @@ console.log(stringFive != numberFive); // false
 // === strict equality, no type conversion 타입을 신경써서 타입이 다르면 다른 것이라고 판단
 console.log(stringFive === numberFive);
 console.log(stringFive !== numberFive);
+
+//object equality by reference
+const ellie1 = { name: 'ellie' }; 
+const ellie2 = { name: 'ellie' };
+const ellie3 = ellie1;
+
+console.log(ellie1==ellie2);//값이 같아도 reference가 아예 다른 주소를 할당받았기에 서로 다름 False
+console.log(ellie1===ellie2); //False
+console.log(ellie1==ellie3); //True
