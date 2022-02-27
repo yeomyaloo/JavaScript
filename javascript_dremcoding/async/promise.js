@@ -65,4 +65,8 @@ const cook = egg =>
         setTimeout(()=>resolve(`${egg} => 🍳`),1000);
     });
 
-getHen().then(getEgg).then(cook).then(console.log);
+getHen()
+    .then(getEgg)
+    .then(cook)
+    .then(console.log)
+    .catch(consol.log);
